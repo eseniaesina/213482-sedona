@@ -3,31 +3,29 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic" rel="stylesheet">
   </head>
   <body>
 
     <header class="main-header">
-      <a class="main-header__logo logo">
+      <a class="main-header__logo  logo">
         <img class="logo__image" src="img/#.svg" width="102" height="87" alt="Логотип города Седона">
       </a>
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--active">
+        <button class="main-nav__toggle  main-nav__toggle--close" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <ul class="main-nav__list  site-list">
+          <li class="site-list__item  site-list__item--active">
             <a class="">Главная</a>
           </li>
           <li class="site-list__item">
-            <a href="#" class="">Фото и видео</a>
+            <a href="photo.html" class="">Фото и видео</a>
           </li>
           <li class="site-list__item">
-            <a href="#" class="">Форма отзыва</a>
+            <a href="form.html" class="">Форма отзыва</a>
           </li>
           <li class="site-list__item">
             <a href="#" class="">HTML Academy</a>
           </li>
         </ul>
-        <button class="main-nav__close" type="button"><span class="visually-hidden">Закрыть меню</span></button>
       </nav>
     </header>
     
@@ -35,16 +33,16 @@
       <h1 class="visually-hidden">Добро пожаловать в Седону!</h1>
       <section class="reasons">
         <b class="reasons__slogan">Cедона — небольшой городок в Аризоне, заслуживающий большего!</b>
-        <p class="reasons__intro">Рассмотрим 5 причин, по которым Седона круче чем гранд каньон!</p>
+        <p class="page-main__description">Рассмотрим 5 причин, по которым Седона круче чем гранд каньон!</p>
         <h2 class="visually-hidden">5 причин крутизны Седоны</h2>
-        <ul class="reasons__list reasons-solution">
+        <ol class="reasons__list  reasons-solution">
           <li class="reasons-solution__item">
             <h3 class="reasons-solution__title">Настоящий городок</h3>
             <small class="reasons-solution__number">- №1 -</small>
             <p class="reasons-solution__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
             <img class="reasons-solution__image" src="img/#.jpg" width="" height="" alt="Провинциальная жизнь Седоны">
             <h3 class="visually-hidden">Рекомендации для туристов</h3>
-            <ul class="reasons__reference reference-list">
+            <ul class="reasons__reference  reference-list">
               <li class="reference-list__item">
                 <b class="reference-list__theme">Жилье</b>
                 <p class="reference-list__comment">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
@@ -80,50 +78,48 @@
             <small class="reasons-solution__number">- №5 -</small>
             <p class="reasons-solution__description">Большинство едет в Гранд Каньон и толпится там</p>
           </li>
-        </ul>
+        </ol>
       </section>
       <section class="search">
         <h2 class="visually-hidden">Поиск гостиницы</h2>
         <b class="search__title">Заинтересовались?</b>
         <p class="search__period">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <a class="search__hotel">Найти гостиницу</a>
+        <a class="search__hotel  button">Найти гостиницу</a>
+      </section>
+      <section class="map">
+          <h2 class="visually-hidden">Седона на карте</h2>
+          <iframe></iframe>
       </section>
     </main>
     
     <footer class="main-footer">
-      <section class="main-footer__generic generic">
-        <div class="generic__map">
-          <h2 class="visually-hidden">Седона на карте</h2>
-          <iframe></iframe>
-        </div>
-        <b class="generic__tag">#visitsedona</b>
-        <div class="generic__social social">
-          <ul class="social__list">
-            <li class="social__item">
-              <a class="social__link social__link--tvitter" href="#">
-                <span class="visually-hidden">Твиттер</span>
-                <svg></svg>
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--facebook" href="#">
-                <span class="visually-hidden">Фейсбук</span>
-                <svg></svg>
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--youtube" href="#">
-                <span class="visually-hidden">Ютуб</span>
-                <svg></svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="generic_copyright copyright">
-          <b class="copyright__text">Разработано</b>
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden">HTML Academy</span></a>
-        </div>
-      </section>
+      <b class="main-footer__tag">#visitsedona</b>
+      <div class="main-footer__social  social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link  social__link--tvitter" href="#">
+              <span class="visually-hidden">Твиттер</span>
+              <svg></svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link  social__link--facebook" href="#">
+              <span class="visually-hidden">Фейсбук</span>
+              <svg></svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link  social__link--youtube" href="#">
+              <span class="visually-hidden">Ютуб</span>
+              <svg></svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="main-footer__copyright  copyright">
+        <b class="copyright__text">Разработано</b>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden">HTML Academy</span></a>
+      </div>
     </footer>
 
   </body>
