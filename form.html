@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона. Оставьте свой отзыв</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
 
@@ -28,35 +29,34 @@
         </ul>
       </nav>
     </header>
-    
     <main class="page-main">
       <h1 class="page-main__title">Оставьте свой отзыв</h1>
       <p class="page-main__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
-      <form class="knowing__form">
+      <form class="knowing-form">
         <fieldset class="form-block">
           <legend class="form-block__title">Представьтесь:</legend>
           <p class="form-block__field">
-            <label for="">Имя:<sup>*</sup></label>
-            <input id="" type="text" name="" value="" placeholder="Петр"> 
+            <label for="form-block-name">Имя:<sup>*</sup></label>
+            <input id="form-block-name" type="text" name="login" value="" placeholder="Петр">
           </p>
           <p class="form-block__field">
-            <label for="">Фамилия:<sup>*</sup></label>
-            <input id="" type="text" name="" value="" placeholder="Иванов"> 
+            <label for="form-block-surname">Фамилия:<sup>*</sup></label>
+            <input id="form-block-surname" type="text" name="surname" value="" placeholder="Иванов">
           </p>
           <p class="form-block__field">
-            <label for="">Отчество:</label>
-            <input id="" type="text" name="" value="" placeholder="Александрович"> 
+            <label for="form-block-patronymic">Отчество:</label>
+            <input id="form-block-patronymic" type="text" name="patronymic" value="" placeholder="Александрович">
           </p>
         </fieldset>
         <fieldset class="form-block">
           <legend class="form-block__title">Контактная информация:</legend>
           <p class="form-block__field">
-            <label for="">Контактный телефон:<sup>*</sup></label>
-            <input id="" type="text" name="" value="" placeholder="Введите телефон"> 
+            <label for="form-block-phone">Контактный телефон:<sup>*</sup></label>
+            <input id="form-block-phone" type="text" name="phone" value="" placeholder="Введите телефон">
           </p>
           <p class="form-block__field">
-            <label for="">Электронная почта:<sup>*</sup></label>
-            <input id="" type="email" name="" value="" placeholder="Введите e-mail"> 
+            <label for="form-block-mail">Электронная почта:<sup>*</sup></label>
+            <input id="form-block-mail" type="email" name="mail" placeholder="Введите e-mail">
           </p>
         </fieldset>
         <fieldset class="form-block">
@@ -101,10 +101,9 @@
           <legend class="form-block__title">Опишите свои эмоции:</legend>
           <textarea name="" id="" rows="5" placeholder="Опишите подробно все свои восторги"></textarea>
         </fieldset>
-        <button class="knowing-button  button" type="submit">Отправить отзыв</button>
+        <button class="knowing-form__button  button" type="submit">Отправить отзыв</button>
       </form>
     </main>
-    
     <footer class="main-footer">
       <b class="main-footer__tag">#visitsedona</b>
       <div class="main-footer__social  social">
@@ -134,17 +133,15 @@
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden">HTML Academy</span></a>
       </div>
     </footer>
-    
-    <section class="modal  modal-failure">
-      <h2 class="modal-failure-success__title">Что-то пошло не так!</h2>
-      <p class="modal-failure-success__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-      <button class="modal-failure__button  button" type="button">Ок</button>
+    <section class="modal  modal--failure">
+      <h2 class="modal__title">Что-то пошло не так!</h2>
+      <p class="modal__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+      <button class="modal__button  button" type="button">Ок</button>
     </section>
-    
-    <section class="modal  modal-success">
-      <h2 class="modal-failure-success__title">Ваш отзыв отправлен!</h2>
-      <p class="modal-failure-success__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
-      <button class="form-success__button  button" type="button">Закрыть окно</button>
+    <section class="modal  modal--success">
+      <h2 class="modal__title">Ваш отзыв отправлен!</h2>
+      <p class="modal__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+      <button class="modal__button  button" type="button">Закрыть окно</button>
     </section>
 
   </body>
