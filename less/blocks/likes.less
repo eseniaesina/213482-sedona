@@ -1,0 +1,35 @@
+.likes {
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.likes__link {
+  
+}
+
+.likes__sum {
+   font-family: inherit;
+  font-size: 14px;
+  line-height: 24px; 
+  font-weight: 700;
+  color: @dark-color;
+  padding-left: 39px;
+  position: relative;
+}
+
+.likes__sum::before {
+  content: "";
+  position: absolute;
+  width: 22px;
+  height: 20px;
+  background-image: url("../img/icon-like.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  top: -5px;
+  left: 0;
+  opacity: 0.3;
+}
