@@ -4,9 +4,11 @@
   margin-top: 22px;
   border: none;
   outline: 1px solid red;
+  width: 320px;
 }
 
 .form-block__title {
+  width: 320px;
   padding: 0;
   margin: 0;
   padding-bottom: 2px;
@@ -24,6 +26,14 @@
   padding: 0;
   margin: 0;
   margin-top: 20px;
+  width: 320px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.form-block__field--indent {
+  flex-direction: column;
 }
 
 .form-block__field label {
@@ -37,16 +47,16 @@
 }
 
 .form-block__field input {
-  padding: 16px 0;
-  padding-left: 20px;
+  box-sizing: border-box;
+  padding: 0;
   margin: 0;
-  margin-left: 12px;
   background-color: @form-color;
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
   border: none;
   outline: none;
+  flex-grow: 1;
 }
 
 .form-block__field input::-webkit-input-placeholder {
