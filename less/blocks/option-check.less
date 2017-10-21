@@ -1,9 +1,68 @@
 .option-check {
-	padding: 0;
-	margin: 0;
-	list-style: none;
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
 
 .option-check__item input[type="checkbox"] {
-	display: none;
+  display: none;
+}
+
+.option-check__item {
+  padding: 25px 0;
+  margin: 0;
+}
+
+.option-check__item label {
+  position: relative;
+  padding-left: 100px;
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  color: @dark-color;
+  text-transform: none;
+  outline: none;
+}
+
+.option-check__item input[type="checkbox"] + label::before {
+  content: "";
+  position: absolute;
+  display: block;
+  padding: 0;
+  margin:0;
+  top: -15px;
+  left: 20px;
+  cursor:pointer;
+  width: 56px;
+  height: 56px;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+}
+
+.option-check__item input[type="checkbox"]:checked + label::before {
+  content: "";
+  position: absolute;
+  display: block;
+  padding: 0;
+  margin:0;
+  vertical-align:top;
+  cursor:pointer;
+  background-image: url("../img/icon-tick.svg");
+  width: 56px;
+  height: 56px;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.option-check__item input[type="checkbox"]+ label:hover::before,
+.option-radio__item input[type="checkbox"]:checked + label:hover::before {
+  background-color: #e5e5e5;
+}
+
+.option-check__item input[type="checkbox"]+ label:active::before,
+.option-check__item input[type="checkbox"]:checked + label:active::before {
+  background-color: #d5d5d5;
 }

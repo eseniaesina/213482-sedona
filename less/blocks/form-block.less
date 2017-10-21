@@ -23,13 +23,17 @@
 }
 
 .form-block__field {
+  box-sizing: border-box;
   padding: 0;
   margin: 0;
   margin-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
   width: 320px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
 }
 
 .form-block__field--indent {
@@ -39,6 +43,7 @@
 .form-block__field label {
   padding: 0;
   margin: 0;
+  margin-right: 14px;
   font-family: inherit;
   font-size: 14px;
   line-height: 26px;
@@ -47,9 +52,11 @@
 }
 
 .form-block__field input {
+  width: 100%;
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  padding: 14px 20px;
   background-color: @form-color;
   font-size: 18px;
   line-height: 26px;
@@ -59,8 +66,58 @@
   flex-grow: 1;
 }
 
-.form-block__field input::-webkit-input-placeholder {
+.form-block__field input::-webkit-input-placeholder,
+.form-block textarea::-webkit-input-placeholder {
   color: @dark-color;
+}
+
+.form-block textarea {
+  color: @dark-color;
+  box-sizing: border-box;
+  padding: 20px 20px;
+  margin: 20px 20px;
+  width: 100%;
+  background-color: @form-color;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  border: none;
+  margin-bottom: 40px;
+  
+}
+
+.form-block__field--phone {
+  position: relative;
+}
+
+.form-block__field--phone::after {
+  content: "";
+  position: absolute;
+  width: 58px;
+  height: 53px;
+  background-color: #e6e6e6;
+  background-image: url("../img/icon-phone.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  bottom: 0;
+  right: 20px;
+}
+
+.form-block__field--email {
+  position: relative;
+}
+
+.form-block__field--email::after {
+  content: "";
+  position: absolute;
+  width: 58px;
+  height: 53px;
+  background-color: #e6e6e6;
+  background-image: url("../img/icon-mail.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  bottom: 0;
+  right: 20px;
 }
 
 .form-block__list {
