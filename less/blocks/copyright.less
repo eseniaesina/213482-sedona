@@ -1,6 +1,6 @@
 .copyright {
-	padding: 0;
-	margin: 0;
+  padding: 0;
+  margin: 0;
   width: 140px;
   display: flex;
 }
@@ -27,7 +27,12 @@
   margin-top: -5px;
 }
 
-.copyright__link:hover svg,
-.copyright__link:focus svg {
-  fill: #81b3d2;
+.copyright__link:hover,
+.copyright__link:focus {
+  background-image: url("../img/logo-htmlacademy-hover.svg");
+}
+
+.copyright__link:active {
+  background-image: url("../img/logo-htmlacademy.svg");
+  opacity: 0.3;
 }
