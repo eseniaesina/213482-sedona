@@ -1,49 +1,86 @@
 .main-nav {
   position: relative;
-  order: 0;
-  width: 320px;
-}
-
-.main-nav__toggle {
-  position: absolute;
-  width: 23px;
-  height: 23px;
-  font-size: 0;
-  background-image: url("../img/icon-menu.svg");
-  background-position: 0 0;
-  background-repeat: no-repeat;
-  background-color: transparent;
-  border: 0;
-  cursor: pointer;
-  outline: none;
-}
-
-.main-nav__toggle--close {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  width: 23px;
-  height: 23px;
-  font-size: 0;
-  background-image: url("../img/icon-cross.svg");
-  background-position: 0 0;
-  background-repeat: no-repeat;
-  background-color: transparent;
-  border: 0;
-  cursor: pointer;
-  outline: none;
-}
-
-.main-nav__toggle:hover {
-  background-color: transparent;
-}
-
-.main-nav__toggle--close:hover {
-  background-color: transparent;
 }
 
 .main-nav__list {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+@media (min-width: 320px) {
+  .main-nav {
+    order: 0;
+    width: 320px;
+  }
+
+  .main-nav__toggle {
+    position: absolute;
+    width: 23px;
+    height: 23px;
+    font-size: 0;
+    background-image: url("../img/icon-menu.svg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    outline: none;
+  }
+
+  .main-nav__toggle--close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 23px;
+    height: 23px;
+    font-size: 0;
+    background-image: url("../img/icon-cross.svg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    outline: none;
+  }
+
+  .main-nav__toggle:hover {
+    background-color: transparent;
+  }
+
+  .main-nav__toggle--close:hover {
+    background-color: transparent;
+  }
+}
+
+@media (min-width: 768px) {
+  .main-nav {
+    order: 0;
+    width: 768px;
+    outline: 1px solid red;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav__toggle--close {
+    display: none;
+  }
+}
+
+@media (min-width: 1280px) {
+  .main-nav {
+    order: 0;
+    width: 1200px;
+    outline: 1px solid red;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav__toggle--close {
+    display: none;
+  }
 }
